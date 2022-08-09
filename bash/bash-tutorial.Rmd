@@ -29,6 +29,19 @@ knit: (function(inputFile, encoding) {
 Bash is a programming language that is used in a command line. There are many different types of programming languages. Bash is commonly used on Macs, Linuxs, and now even PCs. It is similar to C-shell languages like csh, tcsh, and Apple's zsch. 
 
 
+## Why use bash?
+Generally, what can be done in one programming language, can be done in any programming language. But somethings are easier to do in particular languages. Bash is easy to do simple things, but very complicated to do complicated things. That may seem obvious, but in some languages like python, doing complicated things can somethings just be one line of code. In this tutorial, we will go over some of the easier, basic functions of bash. Here are some examples of easy things that can be done in bash:
+
+* Move, copy, and delete files
+  * This is replacing your mouse, with the advantage being that you can manipulate lots of files at the same time instead of pointing and clicking a thousand times
+* Download programs and packages
+  * Think "Internet Explorer or Microsoft Edge". It's only useful for downloading Google Chrome
+  * Bash can be used to install packages (mini-programs) that are used by python and R
+* Run programs and scripts
+  * When you create scripts in other languages (like python and R), these scripts can be run using bash, instead of opening a python intepretor, opening your file manually, and running the code. 
+
+
+
 ## Preparing for the tutorial
 ### Mac users
 The terminal (aka command line) is how you will be interacting with bash. Newer Macs use zsch. In my experience, zsch is very similar to bash and you probably do not need to switch to bash for this tutorial. If you wanted to, you would have to:
@@ -42,11 +55,11 @@ I liked to use the [gitforwindows](https://gitforwindows.org/) bash implementati
 
 
 ## Using a text editor
-As we'll learn throughout the week, there are a variety of different ways to write code. One way is to use an integrated development environment (IDE), such as this tutorial which was written in RStudio or Jupyter which was used to create the python tutorial. Both of which we'll demonstrate how to use later in the week. Another way to edit and write is to use a text editor. This can even just be a notepad document. However, some more fancy software exists which makes it very helpful to write code by stylizing code so that it is easier to read, like the example below.
+As we'll learn throughout the week, there are a variety of different ways to write code. One way is to use an integrated development environment (IDE), such as this tutorial which was written in RStudio or Jupyter which was used to create the python tutorial. We will demonstrate how to use these later in the week. Another way to edit and write is to use a text editor. This can just be a notepad document. However, some more fancy software exists which makes it very helpful to write code by stylizing code so that it is easier to read, like the example below.
 
 ![](images/vcs.PNG)
 
-I would recommend [Visual Code Studio](https://code.visualstudio.com/). As you work through this tutorial, type your example code, solutions, and anything else you are entering in to the terminal to the text editor as well. That way when you run a bit a code today, you'll have a copy of it for future use. Probably the most useful part of coding is reusability, which is where the text editor comes in. You can also add comments to code to make notes on what a certain command does. This can be done by adding a `#` at the beginning of a line. Everything on the line after the "#" will not be executable as code. Try using comments to describe the commands you use throughout the tutorial.
+I would recommend [Visual Code Studio](https://code.visualstudio.com/). As you work through this tutorial, type your example code, solutions, and anything else you are entering in to the terminal to the text editor as well. That way when you run a bit a code today, you'll have a copy of it for future use. Probably the most useful part of coding is re-usability, which is where the text editor comes in. You can also add comments to code to make notes on what a certain command does. This can be done by adding a `#` at the beginning of a line. Everything on the line after the "#" will not be executable as code. Try using comments to describe the commands you use throughout the tutorial.
 
 At the end of the tutorial we will also use a text editor to create a script. Scripts allow us to write out a series of commands or instructions that is then carried out by the program (today, in bash) and can be executed many times as opposed to being utilized in a single instance.
 
@@ -64,7 +77,7 @@ Try creating your first bash text file now. Open Visual Code Studio, create a ne
 
 
 ## Listing
-When you open a folder using the GUI on your computer, you can immediate see the files that are inside. In the terminal you will have to give it a command to see what is inside (ignore this con, the pros are coming soon). The command to "list" the contents of the **current directory** is:
+When you open a folder using the GUI on your computer, you can immediately see the files that are inside. In the terminal you will have to give it a command to see what is inside (ignore this con, the pros are coming soon). The command to "list" the contents of the **current directory** is:
 
 ```{eval=FALSE}
 ls
