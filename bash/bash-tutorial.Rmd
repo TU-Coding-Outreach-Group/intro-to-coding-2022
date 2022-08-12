@@ -54,7 +54,7 @@ The terminal (aka command line) is how you will be interacting with bash. Newer 
 I liked to use the [gitforwindows](https://gitforwindows.org/) bash implementation. Download this programming and install like you would any other program on windows. Then search for the "Git Bash" program. 
 
 
-## Using a text editor
+### Using a text editor
 As we'll learn throughout the week, there are a variety of different ways to write code. One way is to use an integrated development environment (IDE), such as this tutorial which was written in RStudio or Jupyter which was used to create the python tutorial. We will demonstrate how to use these later in the week. Another way to edit and write is to use a text editor. This can just be a notepad document. However, some more fancy software exists which makes it very helpful to write code by stylizing code so that it is easier to read, like the example below.
 
 ![](images/vcs.PNG)
@@ -62,6 +62,11 @@ As we'll learn throughout the week, there are a variety of different ways to wri
 I would recommend [Visual Code Studio](https://code.visualstudio.com/). As you work through this tutorial, type your example code, solutions, and anything else you are entering in to the terminal to the text editor as well. That way when you run a bit a code today, you'll have a copy of it for future use. Probably the most useful part of coding is re-usability, which is where the text editor comes in. You can also add comments to code to make notes on what a certain command does. This can be done by adding a `#` at the beginning of a line. Everything on the line after the "#" will not be executable as code. Try using comments to describe the commands you use throughout the tutorial.
 
 At the end of the tutorial we will also use a text editor to create a script. Scripts allow us to write out a series of commands or instructions that is then carried out by the program (today, in bash) and can be executed many times as opposed to being utilized in a single instance.
+
+### Recommended set up
+We recommend that you have the terminal, the tutorial notebook, and your text editor open and easily accessible on your computer. This will help you read directions, take notes, and run code smoothly. Here is an example of my set up:
+
+![](images/setup.PNG)
 
 
 # Basic Bash Commands
@@ -340,7 +345,7 @@ ln -s /source/file /path/to/where/the/shortcut/goes
 
 
 ## Reading files
-Bash can be used to quickly see the contents of a text file. This can be done with "cat".
+Bash can be used to quickly see the contents of a text file. This can be done with `cat`.
 ```{eval=FALSE}
 cat [filename]
 ```
@@ -349,7 +354,7 @@ Note that it's not only ".txt" files that can be read. Some text files have othe
 
 
 ### Filtering 
-As you can see, that was a lot of output and it was probably hard to make sense of any of it. Let's try filtering this data to find just a specific subject's data. We can do this by "piping" and then use "grep" to filter. Piping refers to running a command on the output of another command. The syntax to pipe is:
+As you can see, that was a lot of output and it was probably hard to make sense of any of it. Let's try filtering this data to find just a specific subject's data. We can do this by "piping" and then use `grep` to filter. Piping refers to running a command on the output of another command. The syntax to pipe is:
 ```{eval=FALSE}
 command1 ... | command2
 ```
@@ -362,14 +367,14 @@ cat [filename] | grep [subjectID]
 
 
 ### Saving outputs to files
-We can save the output of commands to files by using the ">" or ">>" characters. ">" saves the output to a brand new file, and overwrites any file with the name you provide it. ">>" appends your output to a file of a given name. If such a file doesn't exist, it is created. Try playing around with both commands.
+We can save the output of commands to files by using the `>` or `>>` characters. `>` saves the output to a brand new file, and overwrites any file with the name you provide it. `>>` appends your output to a file of a given name. If such a file doesn't exist, it is created. Try playing around with both commands.
 ```{eval=FALSE}
 cat [filename] | grep [subjectID] > [output_file_name]
 ```
 
 
 ## Searching for files/filepaths
-Directory structures can be really confusing. Things can get lost, or sometimes you just want to get the path for something that you know exists somewhere in the current directory. For example, I know there are solutions to all the exercises in this tutorial and that all of the files have a ".sh" extension. Try to use the "find" command to find all the solution files. Here's the find syntax:
+Directory structures can be really confusing. Things can get lost, or sometimes you just want to get the path for something that you know exists somewhere in the current directory. For example, I know there are solutions to all the exercises in this tutorial and that all of the files have a ".sh" extension. Try to use the `find` command to find all the solution files. Here's the find syntax:
 ```{eval=FALSE}
 find . -name [part_of_file_name]
 ```
