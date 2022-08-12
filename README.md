@@ -10,7 +10,7 @@ This set of tutorials is intented for complete beginners to coding. If you have 
 | :-----------: |:------------------------------------:| :-----------:|
 | 08/15/22   | Bash Command line                       | Haroon Popal |
 | 08/16/22    | Python                             | Katie Jobson |
-| 108/17/22    | R      | Billy Mitchell |
+| 08/17/22    | R      | Billy Mitchell |
 
 
 
