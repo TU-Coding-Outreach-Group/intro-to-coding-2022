@@ -27,4 +27,4 @@ For PC users, you can set up the bash command line and git by installing [this p
 
 
 ## Acknowledgements
-
+We would like to thank the Psychology and Neuroscience Department at Temple University, and especially Dr. Peter Marshall for their support. 
