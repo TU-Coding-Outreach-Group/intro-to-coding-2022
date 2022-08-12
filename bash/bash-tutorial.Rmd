@@ -331,12 +331,48 @@ Modify the for loop if-statement to check whether the csv data exists for all su
 
 
 ## Symbolic links
+Symbolic links are shortcuts for files in the terminal. These are useful for when you want to reference something in another directory, instead of creating a duplicate of that directory. For example, you have some data you are analyzing and want to try something new with it. You could copy the current directory and then just replace files with your new analysis. Or, you could create a "master" directory for your data, then create subdirectories for each analysis. Inside each analysis subdirectory, you could create a symbolic link to the original data. 
 
-## Saving outputs to files
+The syntax to create a symbolic link is
+```{eval=FALSE}
+ln -s /source/file /path/to/where/the/shortcut/goes
+```
 
-## Grep
+
+## Reading files
+Bash can be used to quickly see the contents of a text file. This can be done with "cat".
+```{eval=FALSE}
+cat [filename]
+```
+
+Note that it's not only ".txt" files that can be read. Some text files have other extensions. For example, csv files are actually text files with commas separating the cells. Try reading the HCP dataset csv file using cat.
+
+
+### Filtering 
+As you can see, that was a lot of output and it was probably hard to make sense of any of it. Let's try filtering this data to find just a specific subject's data. We can do this by "piping" and then use "grep" to filter. Piping refers to running a command on the output of another command. The syntax to pipe is:
+```{eval=FALSE}
+command1 ... | command2
+```
+The pipe character above is the character you get from hitting shift and backslash (\) on your keyboard.
+
+Let's try filtering the output of the HCP data for a single subject's data
+```{eval=FALSE}
+cat [filename] | grep [subjectID]
+```
+
+
+### Saving outputs to files
+We can save the output of commands to files by using the ">" or ">>" characters. ">" saves the output to a brand new file, and overwrites any file with the name you provide it. ">>" appends your output to a file of a given name. If such a file doesn't exist, it is created. Try playing around with both commands.
+```{eval=FALSE}
+cat [filename] | grep [subjectID] > [output_file_name]
+```
+
 
 ## Searching for files/filepaths
+Directory structures can be really confusing. Things can get lost, or sometimes you just want to get the path for something that you know exists somewhere in the current directory. For example, I know there are solutions to all the exercises in this tutorial and that all of the files have a ".sh" extension. Try to use the "find" command to find all the solution files. Here's the find syntax:
+```{eval=FALSE}
+find . -name [part_of_file_name]
+```
 
 
 # Additional Resources
