@@ -1,8 +1,7 @@
 # Coding Outreach Group Bootcamp
 # Bash Command Line Tutorial
-12/14/2021
 
-__**Instructors:**__ Elizabeth Beard and Haroon Popal
+__**Content Creators:**__ Elizabeth Beard and Haroon Popal
 
 
 ## Description
