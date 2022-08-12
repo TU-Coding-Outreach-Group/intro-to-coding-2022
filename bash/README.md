@@ -22,4 +22,4 @@ This workshop will be an introduction to bash and the command line. The command 
 - Learn how to troubleshoot
 
 ## Workshop Materials
-- [Notebook Viewer](https://tu-coding-outreach-group.github.io/intro-to-coding-2021/bash/index.html)
+- [Notebook Viewer](https://tu-coding-outreach-group.github.io/intro-to-coding-2022/bash/index.html)
