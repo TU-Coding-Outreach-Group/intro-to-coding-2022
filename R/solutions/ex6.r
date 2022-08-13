@@ -1,4 +1,5 @@
-#Applying an absolute value function to create a new variable
-df$EV_DiffAbs <- abs(df$EV_Diff)
-#Checking the new column values as compared to the old column values
-table(df$EV_DiffAbs, df$EV_Diff)
+(ttest<- t.test(x = df$GM_Volume[df$Age == "22-25"],
+                y = df$GM_Volume[df$Age == "31-35"],
+                paired = FALSE,
+                alternative = "two.sided"))
+report(ttest)

@@ -1,8 +1,5 @@
   #Notice we are setting our working directory
   setwd(Path)
-  df <- read.csv(file = "df.csv", 
-                 header = T, 
-                 sep=",",
-                 na.strings=c("","N/A","NA"),
+  df <- read.csv(file = "df.csv",
                  check.names = TRUE,
                  stringsAsFactors = TRUE)

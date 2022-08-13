@@ -1,8 +1,20 @@
-  #Calculating values for new column
-  df$EV_Diff <- df$EV1 - df$EV2
-  #Checking values for new column
-  df$EV_Diff
-  #Rinse, Wash...
-  df$Sample_Diff <- df$samplingCount_safe - df$samplingCount_risk
-  #...Repeat
-  df$Sample_Diff
+# Option 1
+ggplot(data = df[df$Age == "22-25" | df$Age == "26-30",], aes(x = Gender, fill = Age)) +
+       geom_bar() +
+       scale_x_discrete(labels = c("Female", "Male")) +
+       scale_fill_discrete("Age", labels = c("22-25 yrs", "26-30 yrs")) +
+       labs(title = "Age Group by Gender",
+             x = "Gender",
+             y ="Frequency") +
+       theme_classic() 
+
+# Option 2
+data_subset <- df[df$Age == "22-25" | df$Age == "26-30",]
+ggplot(data = df_subset, aes(x = Gender, fill = Age)) +
+  geom_bar() +
+  scale_x_discrete(labels = c("Female", "Male")) +
+  scale_fill_discrete("Age", labels = c("22-25 yrs", "26-30 yrs")) +
+  labs(title = "Age Group by Gender",
+       x = "Gender",
+       y ="Frequency") +
+  theme_classic() 
