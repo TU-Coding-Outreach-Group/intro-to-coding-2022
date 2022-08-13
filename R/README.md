@@ -46,4 +46,4 @@ This workshop will review basic coding skills relevant to conducting statistical
 - Learn how to visualize data
 
 ## Workshop Materials
-- [Notebook Viewer](https://tu-coding-outreach-group.github.io/intro-to-coding-2021/R/index.html)
+- [Notebook Viewer](https://tu-coding-outreach-group.github.io/intro-to-coding-2022/R/index.html)

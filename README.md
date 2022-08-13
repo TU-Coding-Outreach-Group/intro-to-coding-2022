@@ -8,9 +8,9 @@ This set of tutorials is intented for complete beginners to coding. If you have 
 ## Agenda
 | Date        | Workshop                             | Instructor |
 | :-----------: |:------------------------------------:| :-----------:|
-| 08/15/22   | Bash Command line                       | Haroon Popal |
-| 08/16/22    | Python                             | Katie Jobson |
-| 08/17/22    | R      | Billy Mitchell |
+| 08/15/22   | [Bash Command line](https://github.com/TU-Coding-Outreach-Group/intro-to-coding-2022/tree/main/bash) | Haroon Popal |
+| 08/16/22    | [Python](https://github.com/TU-Coding-Outreach-Group/intro-to-coding-2022/tree/main/python) | Katie Jobson |
+| 08/17/22    | [R](https://github.com/TU-Coding-Outreach-Group/intro-to-coding-2022/tree/main/R) | Billy Mitchell |
 
 
 
@@ -27,4 +27,4 @@ For PC users, you can set up the bash command line and git by installing [this p
 
 
 ## Acknowledgements
-
+We would like to thank the Psychology and Neuroscience Department at Temple University, and especially Dr. Peter Marshall for their support. 
