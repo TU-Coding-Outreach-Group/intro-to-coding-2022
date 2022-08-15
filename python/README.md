@@ -3,7 +3,8 @@
 08/16/2022
 
 __**Instructor:**__ Katie Jobson
-__**Content Editor:**__ ELizabeth Beard
+
+__**Content Editor:**__ Elizabeth Beard
 
 ## Description
 This workshop will be an introduction to python. In this tutorial, you will create code and create a script in the Spyder environment/interface. The focus of this workshop will be preparing and cleaning behavioral data to be analyzed later. Often, our data comes to us in a format that is not ideal for the analysis we want to do. This tutorial will show you how we can play around and manage our data to suit our needs, via the pandas package which is like Excel for coders.
