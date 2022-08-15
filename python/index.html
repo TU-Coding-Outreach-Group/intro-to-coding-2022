@@ -16033,7 +16033,7 @@ The average is:
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h1 id="Data-Manipulation-in-Python">Data Manipulation in Python<a class="anchor-link" href="#Data-Manipulation-in-Python">&#182;</a></h1><p>Now we are going to put all of our knowledge about Python together to clean a behavioral dataset that we have. In my opinion, the best way to show you all how to use Python to clean your dataset, is to use a real dataset!</p>
-<p>We are going to be using some data that Liz has graciously allowed us to use.</p>
+<p>We will be using data from the Human Connectome Project dataset, which we will talk more in depth about in a little bit.</p>
 <p>The first thing we will need to do is read our data into a format that Python can work with.</p>
 <h2 id="Libraries">Libraries<a class="anchor-link" href="#Libraries">&#182;</a></h2><p>In order to do this, we need to use something called a software library. A library holds different commands and tools one can use, that are generally developed by people in an open source manner.</p>
 <p>There is what is called the base Python library, which is automatically loaded and you are able to use it without calling a specific library. It has many convienent functions. But sometimes you want a more specific library that has the functions that cater to your needs.</p>
@@ -16048,7 +16048,7 @@ The average is:
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[84]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span>
@@ -16076,7 +16076,7 @@ The average is:
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[87]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -16147,7 +16147,7 @@ The average is:
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[9]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;/Users/KRJ/Downloads/unrestricted_kjobson_4_8_2022_11_19_20.csv&#39;</span><span class="p">)</span>
@@ -17381,61 +17381,6 @@ Name: FS_Total_GM_Vol, Length: 1206, dtype: float64
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[66]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Solution</span>
-
-<span class="n">sleep_f</span> <span class="o">=</span> <span class="n">sleep</span><span class="p">[</span><span class="n">sleep</span><span class="p">[</span><span class="s1">&#39;Gender&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;F&#39;</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">sleep_f</span><span class="p">)</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>      Subject Gender  Full_MR  PSQI  GM_Volume
-2      100307      F     True     4   664124.0
-5      101006      F     True     2   579632.0
-11     101915      F     True     6   676282.0
-14     102311      F     True     4   690232.0
-18     102816      F     True     8   609326.0
-...       ...    ...      ...   ...        ...
-1194   984472      F     True     5   611572.0
-1196   987983      F     True     3   595648.0
-1200   992673      F     True     0   636524.0
-1202   993675      F     True     4   634223.0
-1205   996782      F     True     4   771424.0
-
-[469 rows x 5 columns]
-</pre>
-</div>
-</div>
-
-</div>
-
-</div>
-
 </div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
@@ -17630,7 +17575,7 @@ Input <span class="ansi-green-intense-fg ansi-bold">In [150]</span>, in <span cl
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>This should leave you with 10 separate CSV files wherever you deem to place them. Note that we replace the participant number in the string using what's called an f-string - using the letter f to incidcate that whatever is in brackets will be replaced with our variable 'k'. This is generally referred to as string replacement/substiution. We also had to split up the path file to insert our participant number, which is why we "added" our two strings together.</p>
-<p>There are other ways of accomplishing this string replacement that are often more complicated, but may be useful in the future. More information about this can be found <a href="https://appdividend.com/2020/11/23/python-string-substitution-example/#:~:text=To%20substitute%20string%20in%20Python,a%20substring%20with%20another%20substring.">here</a></p>
+<p>There are other ways of accomplishing this string replacement that are often more complicated, but may be useful in the future. More information about this can be found <a href="https://appdividend.com/2020/11/23/python-string-substitution-example/#:~:text=To%20substitute%20string%20in%20Python,a%20substring%20with%20another%20substring.">here</a>.</p>
 <p>Now, let's clean our datasets separately. As we are doing this with 10 subjects, we want to try and make it into a for loop as best we can, as that will save us time and effort.</p>
 
 </div>
@@ -17881,7 +17826,7 @@ C:\Users\KRJ\AppData\Local\Temp\ipykernel_5644\1744499070.py:8: FutureWarning: T
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h1 id="How-Do-I-Know-if-My-Script-is-Any-Good?">How Do I Know if My Script is Any Good?<a class="anchor-link" href="#How-Do-I-Know-if-My-Script-is-Any-Good?">&#182;</a></h1><p>A big part of why people hestitate to write code is because they are unsure if they have done it correctly, or if there was a better way to do things. Figuring out errors can also be daunting. It turns out, Python does have a nifty option in your IDE for evaluating your code. It's called <a href="https://pylint.pycqa.org/en/latest/index.html">PyLint</a>, and it can be useful for beginners!</p>
 <p>It is pre-built into your Spyder IDE, so it can be extremely convienent. In your Spyder window, click <em>'View -&gt; Panes -&gt; Code Analysis'</em>. You can also hit Ctrl+Shift+C. Once you have done that, you will have a code analysis tool in the top right corner of your Spyder IDE. You can select a Python script you have written and push the green arrow button - this will tell you any issues with your code, things that can be done better to conform to a more "standard" style of coding, and more! This is a nifty little tool that can be used to help even the most beginner person begin to code in Python.</p>
-<p>![spyder_pylint.jpg]</p>
+<p><img src="image/pylint1.png" alt="pylint1.png"></p>
 
 </div>
 </div>
@@ -17893,7 +17838,7 @@ C:\Users\KRJ\AppData\Local\Temp\ipykernel_5644\1744499070.py:8: FutureWarning: T
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>![python_meme2.jpg]</p>
+<p><img src="image/python_meme2.jpg" alt="python_meme2.jpg"></p>
 
 </div>
 </div>
@@ -17934,7 +17879,9 @@ C:\Users\KRJ\AppData\Local\Temp\ipykernel_5644\1744499070.py:8: FutureWarning: T
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="Final-Challenge">Final Challenge<a class="anchor-link" href="#Final-Challenge">&#182;</a></h1><p>Take a new set of variables from the data we have been working with and combine the skills you have learned here today. Use a for loop or a while loop to clean the data all in one bit of code! To accomplish this, use the tools we've collected in your "python_examples.py" to create a new "data_cleaning.py" script. Make a CSV file of 100 subjects, with subject numbers, age, gender, whether they have their full MRI data, <strong>blank blank blank blank</strong>. You don't have to make sure that all subjects have data, as we will be cleaning them in the R day tomorrow!</p>
+<h1 id="Final-Challenge">Final Challenge<a class="anchor-link" href="#Final-Challenge">&#182;</a></h1><p>Take a new set of variables from the data we have been working with and combine the skills you have learned here today. Use a for loop or a while loop to clean the data all in one bit of code! To accomplish this, use the tools we've collected in your "python_examples.py" to create a new "data_cleaning.py" script. Make a CSV file of 100 <em>random</em> subjects, with subject numbers, age, gender, whether they have their full MRI data, PSQI score. You should also filter your data so that we only have participants whose PSQI score is less than 5.</p>
+<p>You don't have to make sure that all subjects have data, as we will be cleaning them in the R day tomorrow!</p>
+<p><em>Hint</em>: We haven't taught you how to randomize numbers yet - see if you can use your troubleshooting skills to find an answer online!</p>
 
 </div>
 </div>
@@ -17946,43 +17893,11 @@ C:\Users\KRJ\AppData\Local\Temp\ipykernel_5644\1744499070.py:8: FutureWarning: T
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><a href="https://github.com/TU-Coding-Outreach-Group/intro-to-coding-2022/blob/main/python/solutions/py_ex9.py">Click for solution</a></p>
+<p><a href="https://github.com/TU-Coding-Outreach-Group/intro-to-coding-2022/blob/main/python/solutions/py_final.py">Click for solution</a></p>
 
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Solution</span>
-
-<span class="n">r_data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Subject&#39;</span><span class="p">,</span> <span class="s1">&#39;Gender&#39;</span><span class="p">,</span><span class="s1">&#39;Age&#39;</span><span class="p">,</span> <span class="s1">&#39;3T_Full_MR_Compl&#39;</span><span class="p">])</span> <span class="c1">#add other variables we will use on the R day</span>
-<span class="n">sub</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;Subject&#39;</span><span class="p">]</span>
-<span class="n">full_mr</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;3T_Full_MR_Compl&#39;</span><span class="p">]</span>
-<span class="n">gender</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;Gender&#39;</span><span class="p">]</span>
-<span class="n">age</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;Age&#39;</span><span class="p">]</span>
-<span class="c1">#add other variables</span>
-<span class="n">r_data</span><span class="p">[</span><span class="s1">&#39;Subject&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">sub</span>
-<span class="n">r_data</span><span class="p">[</span><span class="s1">&#39;Gender&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">gender</span>
-<span class="n">r_data</span><span class="p">[</span><span class="s1">&#39;Age&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">age</span>
-<span class="n">r_data</span><span class="p">[</span><span class="s1">&#39;3T_Full_MR_Compl&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">full_mr</span>
-<span class="n">r_data</span><span class="p">[</span><span class="s1">&#39;GM_Volume&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">gm_vol</span>
-
-<span class="n">r_data</span> <span class="o">=</span> <span class="n">r_data</span><span class="p">[:</span><span class="mi">100</span><span class="p">]</span>
-
-<span class="n">r_data</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s1">&#39;/Users/KRJ/Downloads/intro_coding_2022/r_data.csv&#39;</span><span class="p">)</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
 </div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
