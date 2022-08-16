@@ -79,7 +79,7 @@ Packages in R are synonymous with libraries in other languages. They are more or
   
 Every new package is centralized in R's repository, so even though thousands of people are working on these things independently, you don't need to leave R to find them. Before they can be used, they must be installed, and you can do that pretty simply:
 ```{r Installing a package, eval=FALSE,include=TRUE, message=FALSE, warning=FALSE, error=FALSE}
-  install.packages("PackageName")
+  install.packages("PACKAGENAME")
 ```
   
 Hopefully you've already done this, though. If need to update a package, you can just rerun the above code. If you're using *R Studio*, you can also see a list of your packages and their associated descriptions in the 'Packages' Tab of your *Viewer Window*.   
@@ -88,7 +88,7 @@ Hopefully you've already done this, though. If need to update a package, you can
 
 Now we've installed a package, but that doesn't mean we can use it yet. We need to tell R "We want access to the functions this package has during this session by calling it with the *library()* command.
 ```{r Package Management, eval=FALSE,include=TRUE, message=FALSE, warning=FALSE, error=FALSE}
-  library(PackageName)
+  library(PACKAGENAME)
 ```
 Notice that we drop the quotation marks now. We just specify the (case-sensitive) package name and it let's R know we are planning on using that this session.   
   
@@ -99,7 +99,6 @@ If we ever want to explore the functions contained within a package in conjuncti
 ### Exercise 1  
 Load the following packages:    
   
-ggplot2  
 naniar  
 report  
 skimr  
@@ -115,7 +114,6 @@ tidyverse
 ```
 
 ```{r Exercise 1 - hidden, eval=T, include=F}
-library(ggplot2)
 library(naniar)
 library(report)
 library(skimr) 
@@ -606,7 +604,6 @@ The report function works equally well on ANOVA objects as well.
 We can get a little crazier with our models though. What if we wanted to explore the main effects of age and sex on gray matter volume? We could respecify our model like this: 
 ```{r ANOVA Model With Multiple Variables}
   summary(aov(GM_Volume ~ Age + Gender, data = df))
-  
 ```
 
 All of a sudden, when we account for differences in gender, we begin to see a more pronounced main effect of Age! That's pretty interesting! Of course, we don't know which age groups are significantly different from one another, for that we need to code *contrasts* but that is well beyond the scope of this tutorial (maybe one day in the future; R currently doesn't have any good Bonferonni Contrast packages, as far as I know, so we're working on one). For now, though, let's talk about...

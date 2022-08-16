@@ -23,18 +23,9 @@ This workshop will review basic coding skills relevant to conducting statistical
          Linux: https://download1.rstudio.org/desktop/jammy/amd64/rstudio-2022.07.1-554-amd64.deb   
 3. Download relevant packages. Following the installation of R and R studio, copy, paste, and run the following code into the R Studio console:
          
-          # Note: If using a Linux, each library may have other libraries that it depends upon that will need to be downloaded manually. Exactly which libraries these should be made clear in any error messages that appear when attempting to install. 
-          install.packages("effects")  
-          install.packages("ggpubr")   
-          install.packages("ggthemes")   
-          install.packages("interactions")  
+          # Note: If using a Linux, each library may have other libraries that it depends upon that will need to be downloaded manually. Exactly which libraries these should be made clear in any error messages that appear when attempting to install.   
 	  install.packages("naniar")
-          install.packages("plyr")
-          install.packages("psych")   
-          install.packages("report")    
-          install.packages("rstatix")   
-          install.packages("sjPlot")  
-          install.packages("sjstats")  
+          install.packages("report")     
           install.packages("skimr")  
           install.packages("stargazer")  
           install.packages("tidyverse")  
