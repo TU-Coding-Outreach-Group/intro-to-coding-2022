@@ -30,13 +30,13 @@ Bash is a programming language that is used in a command line. There are many di
 
 
 ## Why use bash?
-Generally, what can be done in one programming language, can be done in any programming language. But somethings are easier to do in particular languages. Bash is easy to do simple things, but very complicated to do complicated things. That may seem obvious, but in some languages like python, doing complicated things can somethings just be one line of code. In this tutorial, we will go over some of the easier, basic functions of bash. Here are some examples of easy things that can be done in bash:
+Generally, what can be done in one programming language, can be done in any programming language. But somethings are easier to do in particular languages. With Bash, it's easy to do simple things, but very complicated to do complicated things. That may seem obvious, but in some languages like python, doing complicated things can sometimes just be one line of code. In this tutorial, we will go over some of the easier, basic functions of bash. Here are some examples of easy things that can be done in bash:
 
 * Move, copy, and delete files
-  * This is replacing your mouse, with the advantage being that you can manipulate lots of files at the same time instead of pointing and clicking a thousand times
+  * This is replacing your mouse, with the advantage being that you can manipulate lots of files at the same time instead of pointing and clicking a thousand times.
 * Download programs and packages
-  * Think "Internet Explorer or Microsoft Edge". It's only useful for downloading Google Chrome
-  * Bash can be used to install packages (mini-programs) that are used by python and R
+  * Think "Internet Explorer or Microsoft Edge". It's only useful for downloading Google Chrome.
+  * Bash can be used to install packages (mini-programs) that are used by python and R.
 * Run programs and scripts
   * When you create scripts in other languages (like python and R), these scripts can be run using bash, instead of opening a python intepretor, opening your file manually, and running the code. 
 
@@ -51,7 +51,7 @@ The terminal (aka command line) is how you will be interacting with bash. Newer 
 3. hit enter
 
 ### PC users
-I liked to use the [gitforwindows](https://gitforwindows.org/) bash implementation. Download this programming and install like you would any other program on windows. Then search for the "Git Bash" program. 
+I liked to use the [git for windows](https://gitforwindows.org/) bash implementation. Download this programming and install like you would any other program on windows. Then search for the "Git Bash" program. 
 
 
 ### Using a text editor
@@ -59,7 +59,7 @@ As we'll learn throughout the week, there are a variety of different ways to wri
 
 ![](images/vcs.PNG)
 
-I would recommend [Visual Code Studio](https://code.visualstudio.com/). As you work through this tutorial, type your example code, solutions, and anything else you are entering in to the terminal to the text editor as well. That way when you run a bit a code today, you'll have a copy of it for future use. Probably the most useful part of coding is re-usability, which is where the text editor comes in. You can also add comments to code to make notes on what a certain command does. This can be done by adding a `#` at the beginning of a line. Everything on the line after the "#" will not be executable as code. Try using comments to describe the commands you use throughout the tutorial.
+I would recommend [Visual Code Studio](https://code.visualstudio.com/). As you work through this tutorial, type your example code, solutions, and anything else you are entering in the terminal into the text editor as well. That way when you run a bit a code today, you'll have a copy of it for future use. Probably the most useful part of coding is re-usability, which is where the text editor comes in. You can also add comments to code to make notes on what a certain command does. This can be done by adding a `#` at the beginning of a line. Everything on the line after the "#" will not be executable as code. Try using comments to describe the commands you use throughout the tutorial.
 
 At the end of the tutorial we will also use a text editor to create a script. Scripts allow us to write out a series of commands or instructions that is then carried out by the program (today, in bash) and can be executed many times as opposed to being utilized in a single instance.
 
@@ -72,7 +72,9 @@ We recommend that you have the terminal, the tutorial notebook, and your text ed
 # Basic Bash Commands
 
 ## Terminal
-The terminal is a way of interacting within your computer that does not require a graphic user interface (GUI). In the olden times, computers did not have a mouse, desktop, folders, and program icons. If you wanted to do something on a computer, you had to give the computer very specific instructions (sometimes referred to as commands). If the terminal is the "old" way of doing things, why do people still use the terminal today? One reason, and a point we will stress throughout the bootcamp, is for automation. When you interact with a computer via traditional ways, you will have to repeat very redundant motions. Let's say you want to rename 100 files. You will have to right click on each one, hit "rename", and then type out the new name of the file, all while making small but infuriating mistakes at each of these steps. Repeating this process over and over you might also make small mistakes that can be harder to catch later, such as if you were to add an extra "a" somewhere. With the terminal, and with coding in general, we can create a set of commands, test it on a couple of files, and then run them on all of the other files using a script or our text file. Then, if we ever have to do something similar in the future, we will have that code ready, and not have to do redundant things again. 
+The terminal is a way of interacting with your computer that does not require a graphic user interface (GUI). In the olden times, computers did not have a mouse, a desktop, folders, or program icons. If you wanted to do something on a computer, you had to give the computer very specific instructions (sometimes referred to as commands). If the terminal is the "old" way of doing things, why do people still use the terminal today?  
+
+One reason, and a point we will stress throughout the bootcamp, is for automation. When you interact with a computer as you regularly do with a GUI and a mouse, you will have to repeat very redundant motions. Let's say you want to rename 100 files. You will have to right click on each one, hit "rename", and then type out the new name of the file, all while making small but infuriating mistakes at each of these steps. Repeating this process over and over, you might also make small mistakes that can be harder to catch later, like if you were to add an extra "a" in a name somewhere. With the terminal, and with coding in general, we can save ourselves a ton of time by creating a set of commands, testing them on a couple of files, and then running them on all of the other files using a script or our text file once we know that they work like we want them to. If later we want to do a similar thing for a new set of files, or even change the names of the files we already edited, we're even closer to completing that goal than we were in the first place because we can just modify that original script. 
 
 ![](images/terminal.PNG)
 
@@ -99,7 +101,7 @@ pwd
 
 
 # Directories
-Another word you might see used is "subdirectories", which is just a directory within a directory. Directories are relative and so any given directory can be a subdirectory, depending on your point of reference. One import directory to know is the **home directory**. Computers have a default directory where you generally start once you open the terminal.If you ever find yourself somewhere and want to go to the home directory, just used the "change directory" command:
+Another word you might see used is "subdirectory", which is just a directory within a directory. Directories are relative and so any given directory can be a subdirectory, depending on your point of reference. One import directory to know is the **home directory**. Computers have a default directory where you generally start once you open the terminal. If you ever find yourself somewhere and want to go to the home directory, just use the "change directory" command:
 
 ```{eval=FALSE}
 cd
@@ -115,7 +117,7 @@ Use the commands we have learned to find the path (location) of the home directo
 Navigating through directories is like navigating through a city. There are streets that need to be followed in order to get to a specific house. In the real world, there are multiple ways to get to a single location like your house. But for this example, imagine there is only one set of directions to get to your house. That is what navigating your computer through a terminal is like (note: this is not true, but using short cuts in the terminal can be very tricky, so we are not going to talk about that). So imagine you are at Weiss Hall on Temple University's campus and you want to get to City Hall. What are the directions that you would need to take? Cecil B. Moore to Broad st. to City Hall. When you navigate through your computer's directory structure, you can't just say the final location of the file you are looking for, you need to give it a path, like how we just described going from Weiss Hall to City Hall. 
 
 ### Know where you are going
-To navigate through directories, we can used the `cd` command and input a subdirectory to go to there. For example, use the following command to go to the "Desktop" from the home directory:
+To navigate through directories, we can use the `cd` command and input a subdirectory to go to there. For example, use the following command to go to the "Desktop" from the home directory:
 
 ```{eval=FALSE}
 cd Desktop
@@ -124,13 +126,13 @@ cd Desktop
 Now when we hit "ls" we can see everything on our desktop:
 ~[](images/desktop.PNG)
 
-Here, we one had one step to go where we needed to go. For example, we are already on Broad St and the next stop is our destiation, City Hall. But what about when you are a few steps away from your destination?
+Here, we only needed one step to get to where we needed to go. For example, we are already on Broad St and the next stop is our destination, City Hall. But what about when you are a few steps away from your destination?
 
 ### Going to where you need to go
 Now that you know the **`ls`, `cd`, and `pwd`** commands, you can navigate through your computer just like you would with the finder (on a mac) or the file explorer (on a PC).
 
 #### Exercise 2.a
-Navigate to the directory that your COG bootcamp materials are in using the terminal.You will probably have to give multiple directions in order to get to your destination. Navigate to each directory (streets in our City Hall example) and then arrive at your desired directory. 
+Navigate to the directory that your COG bootcamp materials are in using the terminal. You will probably have to give multiple directions in order to get to your destination. Navigate to each directory (streets in our City Hall example) and then arrive at your desired directory. Also note that this might be different from person to person depending upon where you downloaded and stored your files to. 
 
 **Note:** Now is a good time to start using the text editor. The exercises you do today may be relevant to the rest of the bootcamp, so it is a good idea to keep a record of all the commands and actions you took to play around with the data. Add a comment to the script to note that the following code is for Exercise 2.a. Then write the solution for this exercise below the comment.
 
@@ -138,7 +140,7 @@ Navigate to the directory that your COG bootcamp materials are in using the term
 
 
 ### Getting from A to B
-In the previous exercise, did you find yourself repetitively using the **`cd`** command to go through various directories. One rule of thumb for coding is that if something is repetitive, there is probably a more efficient way to do it. In this case, we can give the **`cd`** command a path instead of a single directory to navigate to. 
+In the previous exercise, did you find yourself repetitively using the **`cd`** command to go through various directories? One rule of thumb for coding is that if something is repetitive, there is probably a more efficient way to do it. In this case, we can give the **`cd`** command a path instead of a single directory to navigate to. 
 
 #### Exercise 2.b
 Start at your home directory and navigate to the "bash" subdirectory within the COG bootcamp directory. Don't forget to add this code to your text file. 
@@ -240,10 +242,14 @@ if logical_argument; then
 fi
 ```
 
-The logical arguments used here can be a variety of things. One thing you can use it for in data management is to see whether certain files exist. The following command will check to see whether a csv exists for a particular subject.
+The logical arguments used here can be a variety of things. One thing you can use it for in data management is to see whether certain files exist. The following command will check to see whether a .csv file exists for a particular subject.
 ```{eval=FALSE}
+# The -e flag tells bash "We want to know if this file exists"
 if (-e subject_data/subj_ID.csv); then
+
+  # The echo command makes bash print the statement that follows it, but because it's placed in an If-statement, it'll only print it if the logical argument above it is true.
   echo "The data exists!"
+
 fi
 ```
 
@@ -350,7 +356,7 @@ Bash can be used to quickly see the contents of a text file. This can be done wi
 cat [filename]
 ```
 
-Note that it's not only ".txt" files that can be read. Some text files have other extensions. For example, csv files are actually text files with commas separating the cells. Try reading the HCP dataset csv file using cat.
+Note that it's not only ".txt" files that can be read. Some text files have other extensions. For example, .csv files are actually text files with commas separating the cells. Try reading the HCP dataset .csv file using cat.
 
 
 ### Filtering 
